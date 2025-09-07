@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            color: #222;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 220px;
+            background: #222e3c;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 2rem;
+            z-index: 1000;
+            box-shadow: 2px 0 12px rgba(0,0,0,0.08);
+        }
+        .sidebar a {
+            color: #b0c4de;
+            text-decoration: none;
+            font-size: 1.1rem;
+            margin: 1rem 0;
+            transition: color 0.2s, transform 0.2s;
+            font-weight: 500;
+            letter-spacing: 1px;
+            width: 100%;
+            text-align: left;
+            padding-left: 2rem;
+        }
+        .sidebar a.active, .sidebar a:hover {
+            color: #fff;
+            transform: scale(1.08);
+        }
+        .sidebar .fa {
+            margin-right: 0.7rem;
+        }
+        .main-content {
+            margin-left: 240px;
+        }
+        .container {
+            max-width: 700px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+        }
+        h1 {
+            text-align: center;
+            color: #2d3e50;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill {
+            background: #e3eaf2;
+            border-radius: 6px;
+            padding: 1.2rem 1rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: fadeBounce 1.2s;
+        }
+        .skill i {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #2d3e50;
+        }
+        .skill:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+        }
+        @keyframes fadeBounce {
+            0% { opacity: 0; transform: translateY(30px); }
+            60% { opacity: 1; transform: translateY(-10px); }
+            80% { transform: translateY(5px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 800px) {
+            .sidebar {
+                width: 60px;
+                padding-top: 1rem;
+            }
+            .sidebar a {
+                font-size: 0.9rem;
+                margin: 0.7rem 0;
+                padding-left: 0.5rem;
+            }
+            .main-content {
+                margin-left: 70px;
+            }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>My Professional Skills</h1>
+            <div class="skills-list">
+                <div class="skill"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+                <div class="skill"><i class="fab fa-react"></i> React.js</div>
+                <div class="skill"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill"><i class="fas fa-mobile-alt"></i> Responsive Web Design</div>
+                <div class="skill"><i class="fas fa-server"></i> Backend Development</div>
+                <div class="skill"><i class="fas fa-plug"></i> RESTful API</div>
+                <div class="skill"><i class="fas fa-database"></i> Database Management (SQL & NoSQL)</div>
+                <div class="skill"><i class="fab fa-git-alt"></i> Git & Version Control</div>
+                <div class="skill"><i class="fas fa-bug"></i> Debugging & Troubleshooting</div>
+                <div class="skill"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+                <div class="skill"><i class="fas fa-comments"></i> Communication</div>
+                <div class="skill"><i class="fas fa-clock"></i> Time Management</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Skills</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            color: #222;
+        }
+        .container {
+            max-width: 700px;
+            margin: 3rem auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2rem 2.5rem;
+        }
+        h1 {
+            text-align: center;
+            color: #2d3e50;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+        }
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
+        .skill {
+            background: #e3eaf2;
+            border-radius: 6px;
+            padding: 1.2rem 1rem;
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: fadeBounce 1.2s;
+        }
+        .skill i {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            color: #2d3e50;
+        }
+        .skill:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+        }
+        @keyframes fadeBounce {
+            0% { opacity: 0; transform: translateY(30px); }
+            60% { opacity: 1; transform: translateY(-10px); }
+            80% { transform: translateY(5px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1rem;
+            }
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+</body>
+</html>
